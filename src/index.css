@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Merriweather', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', 'Source Sans 3', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #F8FAFC;
+    color: #0F172A;
+  }
+
+  h1, h2, h3, .font-serif-heading {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom subtle shadows and legal craft styling */
+.legal-card-shadow {
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
+}
+
+.legal-card-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.legal-card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px -4px rgba(15, 23, 42, 0.12), 0 4px 12px -2px rgba(15, 23, 42, 0.06);
+}
+
+/* Subtle editorial borders */
+.border-subtle {
+  border-color: #E2E8F0;
+}
+
+/* High contrast inputs with clean focus rings */
+.legal-input {
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.legal-input:focus {
+  outline: none;
+  border-color: #1E3A8A;
+  box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.15);
+}
+
+/* Scrollbar polish */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
