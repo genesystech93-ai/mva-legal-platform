@@ -20,11 +20,11 @@ export default function Footer({ onOpenWizard, onOpenAdmin }) {
           </div>
           <div className="flex flex-col sm:flex-row items-center gap-4 shrink-0">
             <a
-              href="tel:18005550142"
+              href="tel:9289384298"
               className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-md bg-slate-800 border border-slate-700 text-white text-sm font-bold hover:bg-slate-700 transition-colors"
             >
               <Phone className="w-4 h-4 mr-2 text-amber-400" />
-              <span>(800) 555-0142</span>
+              <span>(928) 938-4298</span>
             </a>
             <button
               onClick={() => onOpenWizard(null)}
@@ -53,14 +53,20 @@ export default function Footer({ onOpenWizard, onOpenAdmin }) {
               InjuryClaims connects individuals harmed by reckless drivers, defective pharmaceuticals, toxic environmental chemicals, and manufacturer negligence with experienced litigation counsel nationwide.
             </p>
             <div className="space-y-1.5 text-xs text-slate-400">
-              <div className="flex items-center space-x-2">
+              <a 
+                href="mailto:info@injuryclaimslegal.com"
+                className="flex items-center space-x-2 hover:text-white transition-colors"
+              >
                 <Mail className="w-4 h-4 text-slate-500" />
-                <span>intake@injuryclaimslegal.com</span>
-              </div>
-              <div className="flex items-center space-x-2">
+                <span>info@injuryclaimslegal.com</span>
+              </a>
+              <a 
+                href="tel:9289384298"
+                className="flex items-center space-x-2 hover:text-white transition-colors"
+              >
                 <Phone className="w-4 h-4 text-slate-500" />
-                <span>(800) 555-0142 (Available 24/7)</span>
-              </div>
+                <span>(928) 938-4298 (Available 24/7)</span>
+              </a>
             </div>
           </div>
 

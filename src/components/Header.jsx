@@ -22,11 +22,11 @@ export default function Header({ onOpenWizard, onOpenAdmin }) {
           </div>
           <div className="flex items-center space-x-5">
             <a 
-              href="tel:18005550142" 
+              href="tel:9289384298" 
               className="flex items-center font-semibold text-white hover:text-amber-400 transition-colors"
             >
               <Phone className="w-3.5 h-3.5 mr-1.5 text-amber-400" />
-              <span>(800) 555-0142</span>
+              <span>(928) 938-4298</span>
             </a>
             <span className="hidden md:inline text-slate-400">|</span>
             <span className="hidden md:inline text-slate-300 text-[11px]">
